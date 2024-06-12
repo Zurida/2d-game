@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+            background-color: transparent;
+        }
+
+        canvas {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+        }
+
+        .controls {
+            position: absolute;
+            z-index: 10;
+            top: 50px;
+            left: 50%;
+            translate: -50%;
+        }
+    </style>
+
+    <canvas id="canvas"></canvas>
+    <div class="controls">
+
+        <label for="animations">Choose animation</label>
+        <select id="animations" name="animations">
+            <option value="idle">Idle</option>
+            <option value="jump">Jump</option>
+            <option value="fall">Fall</option>
+            <option value="run">Run</option>
+            <option value="dizzy">Dizzy</option>
+            <option value="sit">Sit</option>
+            <option value="roll">Roll</option>
+            <option value="bite">Bite</option>
+            <option value="ko">Ko</option>
+            <option value="getHit">Get Hit</option>
+        </select>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
